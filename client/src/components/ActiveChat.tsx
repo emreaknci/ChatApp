@@ -93,7 +93,6 @@ const ActivePrivateChat = (props: ActivePrivateChatProps) => {
     }
 
     const listenCreatedChat = () => {
-      console.log("dinleniyor")
       authContext.socket?.on("created-chat", async (chatListDtos: ChatListDto[]) => {
 
         const currentChat = chatListDtos.find(chat => chat._id === chatDetail?._id);

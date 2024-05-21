@@ -34,7 +34,7 @@ const MyProfile = ({ openMenu, setOpenMenu }: { openMenu: any, setOpenMenu: any 
   const [submitted, setSubmitted] = useState(false);
 
   const options = [
-    { icon: <SyncLockIcon />, text: "Şifremi Değiştir", onClick: () => { navigate("/change-password") } },
+    // { icon: <SyncLockIcon />, text: "Şifremi Değiştir", onClick: () => { navigate("/change-password") } },
     { icon: themeContext.theme === true ? <Brightness7Icon /> : <Brightness4Icon />, text: "Tema Değiştir", onClick: themeContext.toggleTheme },
     { icon: <LogoutIcon />, text: "Çıkış Yap", onClick: logout }
   ]
